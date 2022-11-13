@@ -8,9 +8,9 @@ export function App() {
     <React.Fragment>
         <Header />
         <Dashboard />
+        <GlobalStyled />
 
         
-        <GlobalStyled />
     </React.Fragment>
   )
 }

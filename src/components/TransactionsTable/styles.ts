@@ -2,6 +2,11 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     margin-top: 4rem;
+    @media screen and (max-width: 720px) {
+        table {
+            display: none;
+        }
+    }
 
     table {
         width: 100%;

@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+    @media screen and (max-width: 720px) {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;

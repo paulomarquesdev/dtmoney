@@ -13,6 +13,14 @@ export const Content = styled.header`
     align-items: center;
     justify-content: space-between;
 
+    span {
+        display: none;
+    }
+    
+    button {
+        display: block;
+    }
+
     button {
         font-size: 1rem;
         color: #FFF;
@@ -26,6 +34,35 @@ export const Content = styled.header`
 
         &:hover {
             filter: brightness(0.9)
+        }
+    }
+
+    @media screen and (max-width: 720px) {
+        max-width: 80vw;
+        gap: 2rem;
+        align-items: center;
+        justify-content: space-between;
+
+        button {
+            display: none;
+        }
+
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 1rem;
+            height: 1rem;
+            background: var(--blue-light);
+            color: #FFF;
+            padding: 1.5rem;
+            border-radius: 50%;
+            font-size: 2rem;
+            font-weight: 400;
+
+            &:hover {
+            filter: brightness(0.9)
+        }
         }
     }
 `;
